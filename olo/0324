@@ -1,0 +1,1557 @@
+#!/bin/sh
+
+page1()
+{
+echo ''
+echo ''
+yellow; bold
+echo '	AWK Hacks!!'
+reset
+echo ''
+echo ''
+echo ''
+echo '	 田窪守雄'
+echo ''
+echo '      @takubo_morio'
+echo ''
+echo '      github.com/takubo'
+echo ''
+}
+
+page2()
+{
+yellow; bold
+echo '* 自己紹介'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  田窪守雄'
+echo ''
+echo '  愛媛生まれ、関西(明石)在住'
+echo ''
+echo '  組み込み系Cプログラマー'
+echo '  (産業ロボット)'
+echo ''
+echo '  岡山の勉強会は初参加です!!'
+echo ''
+}
+
+page3()
+{
+yellow; bold
+echo '* 自己紹介'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  AWK使い'
+echo ''
+echo '      仕事も既にAWKがないと成り立たない状況'
+echo ''
+echo '      AWKの拡張ライブラリとか作ってます'
+echo ''
+echo '      AWKの(普及|布教)活動のために全国行脚中'
+echo ''
+}
+
+page4()
+{
+yellow; bold
+echo '* こんなものを作ってます'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '  awkGL'
+echo '	gawkのOpenGL拡張'
+echo ''
+echo '  OpenCV-AWK'
+echo '	gawkのOpenCV拡張'
+echo ''
+echo '  AVD(AWK Visual Debugger)'
+echo '	Vim上で動くdgawkのフロントエンド'
+echo ''
+}
+
+page5()
+{
+yellow; bold
+echo '* 自己紹介'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  言語マニア'
+echo ''
+echo '      AWK, C, VimScript'
+echo ''
+echo '      ロボット制御用の内製言語'
+echo '      (Cで書かれたインタプリタ)'
+echo ''
+echo '      (アセンブラ、Ada、Forth'
+echo '       Icon, sh, zsh)'
+echo ''
+}
+
+page6()
+{
+yellow; bold
+echo '* 自己紹介'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  Vim使い'
+echo ''
+echo '    Vim上で動く表計算ソフト'
+echo '    とか作成中。'
+echo '    (ただし、まだ画面と入力だけ。)'
+echo ''
+}
+
+page7()
+{
+yellow; bold
+echo '* 自己紹介'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  黒い画面教団'
+echo ''
+echo ''
+echo ''
+echo ''
+}
+
+page8()
+{
+yellow; bold
+echo '* 自己紹介'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  黒い画面教団'
+echo ''
+echo '     理念'
+echo '	人類よ母なる端末へと帰れ。'
+echo ''
+}
+
+page9()
+{
+yellow; bold
+echo '* 自己紹介'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  黒い画面教団'
+echo ''
+echo '     目的'
+echo '	GUIに魂を縛られた人々を開放する。'
+echo ''
+}
+
+page10()
+{
+echo ''
+echo ''
+echo ''
+echo '	  ちょっとアンケート'
+echo ''
+echo ''
+echo ''
+}
+
+page11()
+{
+yellow; bold
+echo '* アンケート1) AWK使ってますか?'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo ''
+}
+
+page12()
+{
+yellow; bold
+echo '* アンケート1) AWK使ってますか?'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  ア．よく使う'
+echo ''
+echo '  イ．たまに使う'
+echo ''
+echo '  ウ．(まったく/ほとんど)使ったことがない'
+echo ''
+echo '  エ．AWK? 何それ? おいしいの?'
+echo ''
+}
+
+page13()
+{
+yellow; bold
+echo '* AWK何に使ってますか?(複数回答可)'
+reset
+yellow; bold
+echo '*    何を作ってますか?'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo ''
+}
+
+page14()
+{
+yellow; bold
+echo '* アンケート2) AWK何に使ってますか?(複数回答可)'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '  ア．3Dグラフィックスによる情報の可視化'
+echo ''
+echo '  イ．画像処理のための顔認識'
+echo ''
+echo '  ウ．産業機器設計のための'
+echo '      数値シミュレーション'
+echo ''
+echo '  エ．ネットワーク機器のテストのための'
+echo '      簡易TCP/IPサーバ/クライアント'
+echo ''
+echo '  エ．その他'
+}
+
+page15()
+{
+yellow; bold
+echo '* 発表の流れ'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '  ・AWKの基礎的なこととか'
+echo '  ・短く書く'
+echo '  ・様々なAWKの実装'
+echo '  ・GAWKの拡張機能'
+echo '  ・AWKプログラムをデバッグする'
+echo '  ・AWKで顔認識する。'
+echo '  ・AWKで3Dグラフィックを描く'
+echo '  ・C AWK 共通 コード'
+echo '  ・AWKで並列処理'
+}
+
+page16()
+{
+yellow; bold
+echo '* 発表の流れ'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  と言った話題を'
+echo '  デモも交えながら'
+echo '  順次お話していきたいと思います。'
+echo ''
+}
+
+page17()
+{
+yellow; bold
+echo '* AWKの基礎的なこととか'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '    ・連想配列(配列)'
+echo ''
+echo '    ・ローカル変数'
+echo ''
+echo '    ・$演算子の挙動'
+echo ''
+}
+
+page18()
+{
+yellow; bold
+echo '* 短く書く'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '    ・cat'
+echo ''
+echo '    ・FizzBuzz'
+echo ''
+echo '    ・tail'
+echo ''
+}
+
+page19()
+{
+yellow; bold
+echo '* 様々なAWKの実装'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ' oawk  Old(?) AWK'
+echo ' nawk  New AWK'
+echo ' mawk  Michael`s AWK'
+echo ' gawk  GNU AWK'
+echo ' tawk  Tompthon`s AWK'
+echo ' jawk  Java AWK'
+echo ' lawk　LLVM AWK'
+}
+
+page20()
+{
+yellow; bold
+echo '* 様々なAWK実装'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ' oawk  Old(?) AWK'
+yellow; bold
+echo ' nawk  New AWK'
+reset
+yellow; bold
+echo ' mawk  Michael`s AWK'
+reset
+yellow; bold
+echo ' gawk  GNU AWK'
+reset
+yellow; bold
+echo ' tawk  Tompthon`s AWK'
+reset
+echo ' jawk  Java AWK'
+echo ' lawk　LLVM AWK'
+}
+
+page21()
+{
+yellow; bold
+echo '* 有名な(よく使われている)AWK実装'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  nawk (New AWK)'
+echo '     ベル研のオリジナル'
+echo '     one true AWKとも呼ばれる'
+echo ''
+echo '    - 構文木直接実行'
+echo ''
+}
+
+page22()
+{
+yellow; bold
+echo '* 有名な(よく使われている)AWK実装'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  mawk (Michael`s AWK)'
+echo '     最速のスクリプト言語     　　'
+echo '     組み込み版もあり(libmawk)'
+echo ''
+echo '    - スタックマシン'
+echo ''
+}
+
+page23()
+{
+yellow; bold
+echo '* 有名な(よく使われている)AWK実装'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '　GAWK (GNU AWK)'
+echo '     豊富な機能'
+echo '     Linuxはだいたいこれ。'
+echo ''
+echo '     Releae4.0で実行エンジンが変化。'
+echo '     それに合わせて、プロファイラと'
+echo '     デバッガが実装される。'
+echo ''
+echo '    - 構文木直接実行→スタックマシン'
+}
+
+page24()
+{
+yellow; bold
+echo '* 有名な(よく使われている)AWK実装'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '  TAWK（有料、Thompson Automation Software社）'
+echo '     かなり昔から、極めて豊富な機能を提供している'
+echo '       ・デバッガ―'
+echo '       ・真のローカル変数'
+echo '       ・多次元配列'
+echo '       ・Socket'
+echo '       ・追加関数群      などなど…'
+echo ''
+echo '    - Cへのトランスレータ'
+}
+
+page25()
+{
+yellow; bold
+echo '* 各AWKの実行速度'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '  　nawk (one true AWK)　　　　　　?'
+echo ''
+echo '  　mawk                           1'
+echo ''
+echo '　　GAWK (GNU AWK)'
+echo '      　ver　～3.1.8               2'
+echo '      　ver　4.0.0～             1.6'
+echo ''
+echo '    TAWK                           ?'
+}
+
+page26()
+{
+echo ''
+echo ''
+echo ''
+echo '  実際に、スタックマシンの'
+echo '  ダンプを見てみましょう。'
+echo ''
+echo ''
+echo ''
+}
+
+page27()
+{
+yellow; bold
+echo '* 様々なAWK実装'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ' oawk  Old(?) AWK'
+yellow; bold
+echo ' nawk  New AWK'
+reset
+yellow; bold
+echo ' mawk  Michael`s AWK'
+reset
+yellow; bold
+echo ' gawk  GNU AWK'
+reset
+yellow; bold
+echo ' tawk  Tompthon`s AWK'
+reset
+echo ' jawk  Java AWK'
+echo ' lawk　LLVM AWK'
+}
+
+page28()
+{
+yellow; bold
+echo '* 様々なAWK実装'
+reset
+yellow
+echo '----------------------------------------'
+reset
+yellow; bold
+echo ' oawk  Old(?) AWK'
+reset
+echo ' nawk  New AWK'
+echo ' mawk  Michael`s AWK'
+echo ' gawk  GNU AWK'
+echo ' tawk  Tompthon`s AWK'
+yellow; bold
+echo ' jawk  Java AWK'
+reset
+yellow; bold
+echo ' lawk　LLVM AWK'
+reset
+}
+
+page29()
+{
+yellow; bold
+echo '* その他のAWK実装'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ' oawk  Old(?) AWK'
+echo '     本当のオリジナル。'
+echo '     関数定義ができないなど、機能は貧弱。'
+echo ''
+echo '     Solarisには、確かにoawkコマンドが'
+echo '     存在している。'
+echo ''
+echo ''
+echo '     なぞの「original-awk」'
+}
+
+page30()
+{
+yellow; bold
+echo '* その他のAWK実装'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ' jawk  Java AWK'
+echo '     JVM上で動くAWK。'
+echo '     ある程度機能が拡張されている。'
+echo '     Javaのクラスを呼べる?'
+echo ''
+echo '     jgawkと間違えないで >_<'
+echo ''
+}
+
+page31()
+{
+yellow; bold
+echo '* その他のAWK実装'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ' lawk　LLVM AWK'
+echo '     LLVM上で動くAWK。'
+echo '     実装途上。'
+echo '     実用ではなく、実験として作られている。'
+echo ''
+}
+
+page32()
+{
+yellow; bold
+echo '* GAWKの拡張機能'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '  基本的なところ(言語仕様までは変えない範囲)'
+echo ''
+echo '      正規表現の拡張'
+echo ''
+echo '      便利な関数の追加'
+echo ''
+}
+
+page33()
+{
+yellow; bold
+echo '* GAWKの拡張機能'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '  言語仕様の拡張'
+echo ''
+echo '    ・switch'
+echo '    ・ネットワーク'
+echo '	Webサーバが10行くらいで'
+echo '    ・ファイルのinclude'
+echo '    ・関数の間接呼び出し'
+echo '    ・多次元配列'
+echo ''
+}
+
+page34()
+{
+yellow; bold
+echo '* GAWKの拡張機能'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  その他、無数の拡張'
+echo ''
+}
+
+page35()
+{
+yellow; bold
+echo '* AWKプログラムをデバッグする'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo ''
+echo '     AVDの紹介'
+echo ''
+echo ''
+echo ''
+}
+
+page36()
+{
+yellow; bold
+echo '* AVDとは'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo ''
+echo ''
+echo ''
+echo ''
+echo ''
+}
+
+page37()
+{
+yellow; bold
+echo '* AVDとは'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo ''
+echo '  Awk Visual Debugger'
+echo ''
+echo ''
+echo ''
+}
+
+page38()
+{
+yellow; bold
+echo '* AVDとは'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo ''
+echo '  Vim上で動くAWKのデバッガ'
+echo '  (のフロントエンド)'
+echo ''
+echo ''
+echo ''
+}
+
+page39()
+{
+yellow; bold
+echo '* AVDとは'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo ' GNUが作ったコマンドラインのAWKデバッガ'
+echo ' dgawkというのがあります。'
+echo ''
+echo ' Vim上で動くdgawkのフロントエンドがAVD'
+echo ''
+echo ''
+}
+
+page40()
+{
+yellow; bold
+echo '* AVDとは'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ' dgawkはGDBライク'
+echo '    ↓'
+echo ' 使い難い'
+echo '    ↓'
+echo ' dgawkのVimフロントエンド書いた'
+echo '    ↓'
+echo ' それが、AVD(AWK Visual Debugger)'
+echo ''
+}
+
+page41()
+{
+echo ''
+echo ''
+echo ''
+echo '  それでは、デモします。'
+echo ''
+echo ''
+echo ''
+}
+
+page42()
+{
+yellow; bold
+echo '* AVDのアーキテクチャ(Windows版)'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  プログラム'
+echo '    Vim(画面担当), dgawk(デバッグ・エンジン),'
+echo '    Gawk, Python.dll(VimScriptから呼び出し)'
+echo ''
+echo '  使用言語'
+echo '    VimScript(90%), Python(7%), Awk(3%)'
+echo ''
+echo '  プロセス間通信'
+echo '    ソケット(TCP/IP)、匿名パイプ'
+echo ''
+}
+
+page43()
+{
+yellow; bold
+echo '* AVDのアーキテクチャ(Unix版)'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  プログラム'
+echo '    Vim(画面担当), dgawk(デバッグ・エンジン),'
+echo '    Python.so(VimScriptから呼び出し)'
+echo ''
+echo '  使用言語'
+echo '    VimScript(95%), Python(5%)'
+echo ''
+echo '  プロセス間通信'
+echo '    双方向パイプ'
+echo ''
+}
+
+page44()
+{
+yellow; bold
+echo '* AVDの今後'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  ・includeや複数ファイルに対応'
+echo ''
+echo '  ・ウォッチポイント対応'
+echo ''
+echo '  ・呼び出しスタックの表示'
+echo ''
+echo '  ・その他、dgawkの機能を全て使えるようにする'
+echo ''
+}
+
+page45()
+{
+yellow; bold
+echo '* AVDとは'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo ''
+echo '  Awk Visual Debugger'
+echo ''
+echo ''
+echo ''
+}
+
+page46()
+{
+yellow; bold
+echo '* AVDとは'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo ''
+echo '  Awk Vim Debugger'
+echo ''
+echo ''
+echo ''
+}
+
+page47()
+{
+yellow; bold
+echo '* AWKで顔認識する。'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '       OpenCV-AWK'
+echo ''
+echo ''
+echo ''
+}
+
+page48()
+{
+yellow; bold
+echo '* OpenCV-AWKとは'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  GAWKの'
+echo '  『ダイナミックエクステンション'
+echo '    (Cエクステンション)』'
+echo '  という機能による'
+echo '  GAWK(GNU AWK)のOpenCV拡張'
+echo ''
+}
+
+page49()
+{
+yellow; bold
+echo '* Cエクステンションとは'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  (Cで書かれた)共有ライブラリを'
+echo '  ダイナミックロードして(GAWKを)'
+echo '  機能拡張する仕組み。'
+echo ''
+echo '  より端的に言えば'
+echo '  Cで書いた関数をAWKから呼び出す機能。'
+echo ''
+}
+
+page50()
+{
+echo ''
+echo ''
+echo ''
+echo ''
+echo '  では、実際に見てください。'
+echo ''
+echo ''
+echo ''
+}
+
+page51()
+{
+echo ''
+echo ''
+echo ''
+echo ''
+echo '    なぜ、そんなものを作ったんですか？'
+echo ''
+echo ''
+echo ''
+}
+
+page52()
+{
+echo ''
+echo ''
+echo ''
+echo ''
+echo '       OpenCV-AWK'
+echo ''
+echo ''
+echo ''
+}
+
+page53()
+{
+echo ''
+echo ''
+echo ''
+echo ''
+echo '       OpenCV-AWK'
+echo '  つい、カっとなって作った'
+echo ''
+echo ''
+echo ''
+}
+
+page54()
+{
+echo ''
+echo ''
+echo ''
+echo ''
+echo '  Wikipediaで'
+echo '  「OpenCV」の頁を見たら、'
+echo '  AWKだけラッパーの記述がなかった。'
+echo ''
+echo ''
+}
+
+page55()
+{
+echo ''
+echo ''
+echo ''
+echo ''
+echo '  「なに!?AWKからは'
+echo '    OpenCVが使えない!?」'
+echo ''
+echo ''
+echo ''
+}
+
+page56()
+{
+echo ''
+echo ''
+echo ''
+echo ''
+echo '  「それは、おかしいだろう!!!!」'
+echo ''
+echo ''
+echo ''
+echo ''
+}
+
+page57()
+{
+echo ''
+echo ''
+echo ''
+echo ''
+echo '  怒りのあまり、'
+echo '  そこからは記憶がない。'
+echo ''
+echo ''
+echo ''
+}
+
+page58()
+{
+echo ''
+echo ''
+echo ''
+echo ''
+echo '  気付いたら、'
+echo '  胸にライブラリが刺さったAWKが'
+echo '  OpenCVまみれで倒れていた。'
+echo ''
+echo ''
+}
+
+page59()
+{
+echo ''
+echo ''
+echo ''
+echo ''
+echo '  今も反省はしていない。'
+echo ''
+echo ''
+echo ''
+}
+
+page60()
+{
+yellow; bold
+echo '* AWKで3Dグラフィックを描く'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '     awkGLの紹介'
+echo ''
+}
+
+page61()
+{
+yellow; bold
+echo '* awkGLとは'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  GAWKの'
+echo '  『ダイナミックエクステンション'
+echo '    (Cエクステンション)』'
+echo '  という機能による'
+echo '  GAWK(GNU AWK)のOpenGL拡張'
+echo ''
+}
+
+page62()
+{
+echo ''
+echo ''
+echo '  というわけで、awkGL のデモします。'
+echo ''
+echo ''
+echo ''
+}
+
+page63()
+{
+echo ''
+echo ''
+echo ''
+echo '   なぜ awkGL を作ったか'
+echo ''
+echo ''
+echo ''
+}
+
+page64()
+{
+echo ''
+echo ''
+echo ''
+echo '          awkGL'
+echo ''
+echo ''
+echo ''
+}
+
+page65()
+{
+echo ''
+echo ''
+echo ''
+echo '      戦略ライブラリ awkGL'
+echo ''
+echo ''
+echo ''
+}
+
+page66()
+{
+yellow; bold
+echo '* なぜ戦略ライブラリawkGLを作ったか'
+reset
+yellow; bold
+echo '*   (awkGLの目的)'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  1. 情報の手軽な可視化手段'
+echo ''
+echo '  2. CGプログラムのプロトタイピング'
+echo ''
+echo '  3. CGプログラミングの教育'
+echo ''
+echo '  4. AWKの普及活動'
+echo ''
+}
+
+page67()
+{
+yellow; bold
+echo '* 1. 情報の手軽な可視化手段'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  ちょっとしたことを手軽に可視化する。'
+echo ''
+echo '  (AWKはお手軽！)'
+echo ''
+}
+
+page68()
+{
+yellow; bold
+echo '* 1. 情報の手軽な可視化手段'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '  (これまでのAWK)'
+echo ''
+echo '    テキスト → AWK → テキスト'
+echo ''
+echo ''
+echo ''
+echo ''
+echo ''
+echo ''
+}
+
+page69()
+{
+yellow; bold
+echo '* 1. 情報の手軽な可視化手段'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '  (これからのAWK)'
+echo ''
+echo '    テキスト → AWK → テキスト'
+echo ''
+echo '    テキスト → AWK → グラフィック'
+echo ''
+echo ''
+echo ''
+echo ''
+}
+
+page70()
+{
+yellow; bold
+echo '* 1. 情報の手軽な可視化手段'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '  (更にその先のAWK)'
+echo ''
+echo '    テキスト → AWK → テキスト'
+echo ''
+echo '    テキスト → AWK → グラフィック'
+echo ''
+echo '    グラフィック → AWK → テキスト'
+echo ''
+echo '    グラフィック → AWK → グラフィック'
+}
+
+page71()
+{
+yellow; bold
+echo '* 2. CGプログラムのプロトタイピング'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  Cで書く前に、手軽に構想を'
+echo '  試してみることができる。'
+echo ''
+echo '  文法がCに近いので、変換も容易。'
+echo ''
+}
+
+page72()
+{
+yellow; bold
+echo '* 3. CGプログラミングの教育'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  文法が簡易であるので、学習者は'
+echo '  純粋なCGの理論に集中できる。'
+echo ''
+echo '  テキスト処理のことを一切考えなければ、'
+echo '  AWKの学習コストは更に下がる。'
+echo ''
+echo '  文法がCに近いので、将来性もある。'
+echo ''
+echo '  AWK自体にも実用性。'
+}
+
+page73()
+{
+yellow; bold
+echo '* 4. AWKの普及活動'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  ・ゲームを作れるようにする'
+echo ''
+echo '  　 − ゲームを作れない言語は普及しない説'
+echo ''
+}
+
+page74()
+{
+yellow; bold
+echo '* 4. AWKの普及活動'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  ・イベントなどでデモしたときの見栄えがよい'
+echo ''
+echo '     − テキスト処理は見た目が地味。'
+echo ''
+echo '     − テキスト処理やサーバはわかっている'
+echo '       知らない人には何をしているか'
+echo '       わかりずらい'
+echo ''
+echo '     − Ruby, Python, Perlなどの前でも'
+echo '       蔭らないようなアピールが必要。'
+}
+
+page75()
+{
+yellow; bold
+echo '* 4. AWKの普及活動'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  ・「AwKとか言語じゃなくてコマンドだろｗ」'
+echo '     とか言ってる連中を黙らせる。'
+echo ''
+}
+
+page76()
+{
+yellow; bold
+echo '* 4. AWKの普及活動'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  ・「AwKとか言語じゃなくてコマンドだろｗ」'
+echo '     という誤った考えに染まった'
+echo '     不幸な人間たちを教え導く。'
+echo ''
+}
+
+page77()
+{
+yellow; bold
+echo '* これをまとめると'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo '	言語は見た目が9割'
+echo ''
+echo ''
+echo ''
+}
+
+page78()
+{
+echo ''
+echo ''
+echo '    なぜ、AWK を使うんですか？'
+echo ''
+echo '    なぜ、それを AWK でやるんですか？'
+echo ''
+echo '    AWKじゃなきゃダメなんですか？'
+echo ''
+echo ''
+}
+
+page79()
+{
+yellow; bold
+echo '* なぜ、AWKを使うのか？'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo '  そこにAWKがあるから'
+echo ''
+}
+
+page80()
+{
+yellow; bold
+echo '* なぜ、AWKを使うのか？'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '  言語仕様が美しい'
+echo ''
+echo '  学習コストが極めて低い'
+echo ''
+echo '  小さいのにパワフル'
+echo ''
+echo '  『プログラミング言語 AWK』というバイブル'
+echo ''
+echo '  Cとよく似た文法'
+}
+
+page81()
+{
+yellow; bold
+echo '* なぜ、AWKを使うのか？'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '  言語仕様が美しい'
+echo ''
+echo '  学習コストが極めて低い'
+echo ''
+echo '  小さいのにパワフル'
+echo ''
+echo '  『プログラミング言語 AWK』というバイブル'
+echo ''
+yellow; bold
+echo '  Cとよく似た文法'
+reset
+}
+
+page82()
+{
+yellow; bold
+echo '* CACC'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo '  CACC'
+echo ''
+}
+
+page83()
+{
+yellow; bold
+echo '* CACC'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo '  C AWK Common Code'
+echo ''
+}
+
+page84()
+{
+yellow; bold
+echo '* CACC'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo '  C AWK 共通 コード'
+echo ''
+}
+
+page85()
+{
+echo ''
+echo ''
+echo ''
+echo '    実際にやってみます。'
+echo ''
+echo ''
+echo ''
+}
+
+page86()
+{
+echo ''
+echo ''
+echo ''
+echo '  パイプ'
+echo ''
+echo ''
+echo ''
+}
+
+page87()
+{
+echo ''
+echo ''
+echo ''
+echo '  AWKで並列処理'
+echo ''
+echo ''
+echo ''
+}
+
+page88()
+{
+yellow; bold
+echo '* これからのAWK'
+reset
+yellow; bold
+echo '* (とか、やって行くこととか)'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  進化するGAWK'
+echo '    iオプション'
+echo '    ビッグナンバー'
+echo ''
+echo '  AML(AWK Math Library)'
+echo ''
+echo '  BioAWK'
+echo ''
+echo '  高速エンジンの開発'
+echo ''
+}
+
+page89()
+{
+yellow; bold
+echo '* まとめ'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ''
+echo '	AWKがあれば、何でも出来る。'
+echo ''
+echo ''
+echo ''
+}
+
+page90()
+{
+yellow; bold
+echo '* 人材募集'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo ' 【AWK WANT YOU！！】'
+echo '    現在、AWKのライブラリを作る人手が'
+echo '    まったく足りていません。'
+echo '    AWKは常に人材を募集しています。'
+echo '    君もAWKを拡張してみないか！！'
+echo ''
+}
+
+page91()
+{
+echo ''
+echo ''
+echo '      御清聴、ありがとうございました。'
+echo ''
+echo ''
+echo '      github.com/takubo'
+echo ''
+echo '      @takubo_morio'
+echo ''
+echo ''
+}
+
+page_num=91
+
+
+no_color() { echo -n '\033[m'; }
+
+red() { echo -n '\033[31m'; }
+
+yellow() { echo -n '\033[33m'; }
+
+magenta() { echo -n '\033[35m'; }
+
+cyan() { echo -n '\033[36m'; }
+
+reset() { echo -n '\033[00m'; }
+
+bold() { echo -n '\033[01m'; }
+
+underline() { echo -n '\033[04m'; }
+
+blink() { echo -n '\033[05m'; }
+
+
+clear() { echo -n '\033[2J'; }
+
+cursor_top() { echo -n '\033[0;0H'; }
+
+no_cursor() { echo -n '\033[>5h'; }
+
+show_cursor() { echo -n '\033[>5l'; }
+
+
+getkey() { stty -echo raw; dd bs=1 count=1 2>/dev/null; stty cooked echo; }
+
+
+# init
+#trap "stty sane" KILL
+#trap "stty sane" STOP
+trap "stty sane" INT
+#trap "stty sane" TERM
+no_cursor
+
+i=1
+while : ; do
+	clear
+	cursor_top	# mintty only
+	reset
+	if [ $i -le 0 ] ; then i=1; fi
+	if [ $i -gt $page_num ] ; then break; fi
+	page$i $i
+	case `getkey` in
+		'' | 'q' ) break ;;
+		'' | ' ' ) i=`expr $i + 1` ;;
+		'' | 'b' ) i=`expr $i - 1` ;;
+		'e'        ) i=$page_num ;;
+		'' | 'z' ) stty sane; kill -TSTP $$; no_cursor ;;
+	esac
+done
+
+# final
+show_cursor
+no_color
+clear
+
+exit

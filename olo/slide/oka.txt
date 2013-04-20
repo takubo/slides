@@ -1,0 +1,110 @@
+題名
+
+自己紹介 プレ
+
+アンケート
+
+自己紹介
+	出身とか
+
+	組み込み屋
+
+	言語マニア
+		
+	AWK
+		
+	裏
+		黒い画面教団
+		Linuxを入れ始めた話
+		Perl(AWK前夜)
+		ネットワークで目覚める
+		Python
+
+発表の流れ
+
+AWKの基礎
+
+よくある間違い
+
+短く書く
+	cat
+	tail
+	FizzBuzz
+
+各実装
+	oawk
+		なぞのoriginal-awk
+	nawk
+	mawk
+		libmawk
+	gawk
+	tawk
+	jawk
+		jgawk
+	lawk
+		非実用
+
+実行形式、速度、ダンプ
+
+GAWK拡張機能
+	switch
+	ネットワーク
+		Webサーバ 10行くらい
+	@呼び出し
+		流行
+	@include
+
+AVD
+	普通に実行
+	sleep
+	ブレイクポイント
+	step と next
+	変数内容の表示
+	変数の書き換え
+	標準入力
+
+AVDのアーキテクチャ
+
+GAWK Cエクステンション
+
+AWK-Posix-Signal
+
+OpenCV-AWK
+	スライドショウ
+	顔認識
+	カメラ
+	カメラ顔認識
+
+OpenCV-AWKをなぜ作ったか
+
+awkGL
+	draggable_mouse
+	earth
+	earth_light
+	ball
+	perticle
+	teapot
+	teapot_light
+	planets
+
+awkGLの目的
+
+AWKの魅力
+
+CACC
+	99.c
+	hello.c
+	関数呼び出し
+
+CACC解説
+
+並列処理
+
+現在とこれから（AML, BioAWK）
+	-i
+
+人材募集
+
+まとめ
+
+御清聴
