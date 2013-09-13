@@ -1,0 +1,304 @@
+#!/bin/zsh
+
+page1()
+{
+echo ''
+yellow; bold
+echo '          自己紹介とか、'
+reset
+yellow; bold
+echo '          近況報告とか、'
+reset
+yellow; bold
+echo '          今後の予定とか'
+reset
+echo ''
+echo '	     田窪守雄'
+echo ''
+echo '          @takubo_morio'
+echo ''
+}
+
+page2()
+{
+yellow; bold
+echo '* 自己紹介'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  田窪守雄'
+echo ''
+echo '  愛媛生まれ、関西(明石)在住'
+echo ''
+echo '  組み込み系Cプログラマー'
+echo '  (産業ロボット)'
+echo ''
+echo '  USP友の会のイベントには初参加です!!'
+}
+
+page3()
+{
+yellow; bold
+echo '* 自己紹介'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  AWK使い'
+echo ''
+echo '      AWKの拡張ライブラリとかの作成'
+echo ''
+echo '      AWKの(普及|布教)活動'
+echo ''
+}
+
+page4()
+{
+yellow; bold
+echo '* こんなものを作ってます'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  awkGL'
+echo '	gawkのOpenGL拡張'
+echo ''
+echo '  OpenCV-AWK'
+echo '	gawkのOpenCV拡張'
+echo ''
+echo '  AVD(AWK Visual Debugger)'
+echo '	Vim上で動くdgawkのフロントエンド'
+echo ''
+}
+
+page5()
+{
+yellow; bold
+echo '* 最近作ったもの'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '  CAwk'
+echo '	gawkのlibffi拡張'
+echo ''
+echo '	AWKスクリプト中から'
+echo '	Cの関数をそのまま呼べる'
+echo ''
+echo ''
+}
+
+page6()
+{
+yellow; bold
+echo '* これまでに作った拡張機能'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '    awkGL'
+echo '    OpenCV-AWK    (顔認識のみ)'
+echo '    cawk'
+echo '    awk-posix-signal  (Signalとタイマ)'
+echo '    awk-posix-select  (slect(2)とスリープ)'
+echo '    awkVG'
+echo '    cairoAWK'
+}
+
+page7()
+{
+yellow; bold
+echo '* 今後(選択と集中)'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '    awkGL'
+echo '    awkGL ES (実はまったく別物)'
+echo '	     (組込み分野への進出、RasPi)'
+echo '    CAwk'
+echo '    awk-posix-signal  (Signalとタイマ)'
+echo '    awk-posix-select  (slect(2)とスリープ)'
+}
+
+page8()
+{
+yellow; bold
+echo '* AWK 関連 その他'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo '    Rasberry Pi 買いました'
+echo ''
+echo '    AVD(Awk Visual Debugger)'
+echo ''
+echo '    POSIX AWK の翻訳'
+echo '	Rationaleとか'
+echo ''
+echo '    GNU AWK マニュアルの翻訳'
+echo ''
+}
+
+page9()
+{
+yellow; bold
+echo '* AWK 関連 その他'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '    AWK 入門 勉強会'
+echo '	(jusでやる?)'
+echo '	(シェル入門からか?)'
+echo ''
+}
+
+page10()
+{
+yellow; bold
+echo '* その他'
+reset
+yellow
+echo '----------------------------------------'
+reset
+echo ''
+echo '    FreeBSD はじめました'
+echo '        インストール後3日目にして、'
+echo '	Xを入れてしまう軟弱ぷり。'
+echo '	現在は、jfbtermと悪戦苦闘中。'
+echo ''
+echo '    Vine Linux と FreeBSD'
+echo '    の2本立てで行こうかなと'
+}
+
+page11()
+{
+echo ''
+echo ''
+echo ''
+echo '      最後にシェル芸をひとつ'
+echo ''
+echo ''
+echo ''
+}
+
+page12()
+{
+echo ''
+echo ''
+echo ''
+echo '	  FizzBuzz'
+echo ''
+echo ''
+echo ''
+}
+
+page13()
+{
+echo ''
+echo ''
+echo ''
+echo 'paste <(seq 0 3 100 | tail -n +2 | sed \\047s/^/\\n\\nFizz/\\047) <(seq 0 5 100 | tail -n +2 | sed \\047s/^/\\n\\n\\n\\nBuzz/\\047) <(seq 100) | tr -d \\047\\t\\047 | sed \\047/z/s/[0-9]//g\\047'
+echo ''
+echo ''
+echo ''
+}
+
+page14()
+{
+echo ''
+echo ''
+echo ''
+echo 'paste <(seq 0 3 100 | tail -n +2 | sed \\047s/^/\\n\\nFizz/\\047) \\'
+echo '      <(seq 0 5 100 | tail -n +2 | sed \\047s/^/\\n\\n\\n\\nBuzz/\\047) \\'
+echo '      <(seq 100) \\'
+echo '| tr -d \\047\\t\\047 | sed \\047/z/s/[0-9]//g\\047'
+echo ''
+echo ''
+}
+
+page15()
+{
+echo ''
+echo ''
+echo '   御清聴、ありがとうございました。'
+echo ''
+echo ''
+echo '         github.com/takubo'
+echo ''
+echo '           @takubo_morio'
+echo ''
+echo ''
+}
+
+page_num=15
+
+
+no_color() { echo -n '\033[m'; }
+
+red() { echo -n '\033[31m'; }
+
+yellow() { echo -n '\033[33m'; }
+
+magenta() { echo -n '\033[35m'; }
+
+cyan() { echo -n '\033[36m'; }
+
+reset() { echo -n '\033[00m'; }
+
+bold() { echo -n '\033[01m'; }
+
+underline() { echo -n '\033[04m'; }
+
+blink() { echo -n '\033[05m'; }
+
+
+clear() { echo -n '\033[2J'; }
+
+cursor_top() { echo -n '\033[0;0H'; }
+
+no_cursor() { echo -n '\033[>5h'; }
+
+show_cursor() { echo -n '\033[>5l'; }
+
+
+getkey() { stty -echo raw; dd bs=1 count=1 2>/dev/null; stty cooked echo; }
+
+
+# init
+#trap "stty sane" KILL
+#trap "stty sane" STOP
+trap "stty sane" INT
+#trap "stty sane" TERM
+no_cursor
+
+i=1
+while : ; do
+	clear
+	cursor_top	# mintty only
+	reset
+	if [ $i -le 0 ] ; then i=1; fi
+	if [ $i -gt $page_num ] ; then break; fi
+	page$i $i
+	case `getkey` in
+		'' | 'q' ) break ;;
+		'' | ' ' ) i=`expr $i + 1` ;;
+		'' | 'b' ) i=`expr $i - 1` ;;
+		'e'        ) i=$page_num ;;
+		'' | 'z' ) stty sane; kill -TSTP $$; no_cursor ;;
+	esac
+done
+
+# final
+show_cursor
+no_color
+clear
+
+exit

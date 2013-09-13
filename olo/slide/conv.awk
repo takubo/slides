@@ -3,7 +3,7 @@
 BEGIN {
 	OFS = ""
 
-	print "#!/bin/sh"
+	print "#!/bin/zsh"
 	print ""
 
 	page = 1
@@ -18,6 +18,11 @@ BEGIN {
 	print "page" page "()"
 	print "{"
 	next
+}
+
+{
+	gsub(/'/, "\\047")
+	gsub(/\\/, "\\\\")
 }
 
 !/^%/ {
