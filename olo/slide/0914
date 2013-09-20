@@ -4,73 +4,78 @@ page1()
 {
 echo ''
 yellow; bold
-echo '          自己紹介とか、'
-reset
-yellow; bold
-echo '          近況報告とか、'
-reset
-yellow; bold
-echo '          今後の予定とか'
+echo '              自己紹介とか、'
 reset
 echo ''
-echo '	     田窪守雄'
+yellow; bold
+echo '              近況報告とか、'
+reset
 echo ''
-echo '          @takubo_morio'
+yellow; bold
+echo '              今後の予定とか'
+reset
+echo ''
+echo '	         田窪守雄'
+echo ''
+echo '              @takubo_morio'
 echo ''
 }
 
 page2()
 {
 yellow; bold
-echo '* 自己紹介'
+echo ' * 自己紹介'
 reset
 yellow
-echo '----------------------------------------'
+echo '------------------------------------------'
 reset
 echo ''
 echo '  田窪守雄'
 echo ''
-echo '  愛媛生まれ、関西(明石)在住'
+echo '      ・愛媛生まれ、関西(明石)在住'
 echo ''
-echo '  組み込み系Cプログラマー'
-echo '  (産業ロボット)'
+echo '      ・組み込み系Cプログラマー'
+echo '        (産業ロボット)'
 echo ''
-echo '  USP友の会のイベントには初参加です!!'
+echo ''
+echo ' 『USP友の会』のイベントには初参加です!!'
 }
 
 page3()
 {
 yellow; bold
-echo '* 自己紹介'
+echo ' * 自己紹介'
 reset
 yellow
-echo '----------------------------------------'
+echo '------------------------------------------'
 reset
 echo ''
 echo '  AWK使い'
 echo ''
-echo '      AWKの拡張ライブラリとかの作成'
+echo '      ・AWKの拡張ライブラリとか作成'
 echo ''
-echo '      AWKの(普及|布教)活動'
+echo '      ・AWKの(普及|布教)活動'
+echo ''
+echo '      ・『AWK Hacks!!』'
 echo ''
 }
 
 page4()
 {
 yellow; bold
-echo '* こんなものを作ってます'
+echo ' * こんなものを作ってます'
 reset
 yellow
-echo '----------------------------------------'
+echo '------------------------------------------'
 reset
 echo ''
-echo '  awkGL'
+echo '  ・awkGL'
 echo '	gawkのOpenGL拡張'
 echo ''
-echo '  OpenCV-AWK'
+echo '  ・OpenCV-AWK'
 echo '	gawkのOpenCV拡張'
 echo ''
-echo '  AVD(AWK Visual Debugger)'
+echo '  ・AVD(AWK Visual Debugger)'
 echo '	Vim上で動くdgawkのフロントエンド'
 echo ''
 }
@@ -78,129 +83,184 @@ echo ''
 page5()
 {
 yellow; bold
-echo '* 最近作ったもの'
+echo ' * 自己紹介'
 reset
 yellow
-echo '----------------------------------------'
+echo '------------------------------------------'
 reset
 echo ''
-echo '  CAwk'
-echo '	gawkのlibffi拡張'
-echo ''
-echo '	AWKスクリプト中から'
-echo '	Cの関数をそのまま呼べる'
+echo '  ・『AWK Hacks!!』のウケがいいので、'
+echo '    調子に乗って全国行脚中。'
 echo ''
 echo ''
+echo '  ・交通費/宿泊費がががが。。。'
+echo ''
+echo ''
+echo '  ・リアルに東京に転職するか'
+echo '    (おもしろそうな勉強会、多いし・・・。)'
 }
 
 page6()
 {
 yellow; bold
-echo '* これまでに作った拡張機能'
+echo ' * 最近作ったもの'
 reset
 yellow
-echo '----------------------------------------'
+echo '------------------------------------------'
 reset
-echo '    awkGL'
-echo '    OpenCV-AWK    (顔認識のみ)'
-echo '    cawk'
-echo '    awk-posix-signal  (Signalとタイマ)'
-echo '    awk-posix-select  (slect(2)とスリープ)'
-echo '    awkVG'
-echo '    cairoAWK'
+echo ''
+echo '  CAwk (コーク)'
+echo ''
+echo '    ・gawkのlibffi拡張'
+echo ''
+echo '    ・AWKのコードからCの関数を直に呼ぶ'
+echo ''
+echo '    ・AWKでCの関数を呼ぶから"CAwk"'
+echo ''
 }
 
 page7()
 {
 yellow; bold
-echo '* 今後(選択と集中)'
+echo ' * これまでに作った拡張機能'
 reset
 yellow
-echo '----------------------------------------'
+echo '------------------------------------------'
 reset
-echo '    awkGL'
-echo '    awkGL ES (実はまったく別物)'
-echo '	     (組込み分野への進出、RasPi)'
-echo '    CAwk'
-echo '    awk-posix-signal  (Signalとタイマ)'
-echo '    awk-posix-select  (slect(2)とスリープ)'
+echo ''
+echo '   ・awkGL'
+echo '   ・OpenCV-AWK (顔認識のみ)'
+echo '   ・awk-posix-signal (シグナルとタイマ)'
+echo '   ・awk-posix-select (slect(2)とスリープ)'
+echo '   ・cairoAWK'
+echo '   ・awkVG'
+echo '   ・CAwk'
 }
 
 page8()
 {
 yellow; bold
-echo '* AWK 関連 その他'
+echo ' * 今後'
 reset
 yellow
-echo '----------------------------------------'
+echo '------------------------------------------'
 reset
-echo '    Rasberry Pi 買いました'
 echo ''
-echo '    AVD(Awk Visual Debugger)'
 echo ''
-echo '    POSIX AWK の翻訳'
-echo '	Rationaleとか'
 echo ''
-echo '    GNU AWK マニュアルの翻訳'
+echo '              選択と集中'
+echo ''
+echo ''
 echo ''
 }
 
 page9()
 {
 yellow; bold
-echo '* AWK 関連 その他'
+echo ' * 今後'
 reset
 yellow
-echo '----------------------------------------'
+echo '------------------------------------------'
 reset
 echo ''
-echo '    AWK 入門 勉強会'
-echo '	(jusでやる?)'
-echo '	(シェル入門からか?)'
+echo ''
+echo ''
+echo '       gawk4.1.0で API変わったので'
+echo ''
+echo ''
 echo ''
 }
 
 page10()
 {
 yellow; bold
-echo '* その他'
+echo ' * 今後'
 reset
 yellow
-echo '----------------------------------------'
+echo '------------------------------------------'
 reset
-echo ''
-echo '    FreeBSD はじめました'
-echo '        インストール後3日目にして、'
-echo '	Xを入れてしまう軟弱ぷり。'
-echo '	現在は、jfbtermと悪戦苦闘中。'
-echo ''
-echo '    Vine Linux と FreeBSD'
-echo '    の2本立てで行こうかなと'
+echo '    ・awkGL'
+echo '	(gawk 4.1.0以降への対応は後回し)'
+echo '    ・awkGL ES'
+echo '	(GLとは、全く別物)'
+echo '	(組込み分野への進出、RasPi)'
+echo '	(4系でいくか、4.1系でいくか悩み所)'
+echo '    ・awk-posix-signal'
+echo '    	(機能縮小)'
+echo '    	(kill, raise, alrmの廃止)'
+echo '    ・awk-posix-select'
+echo '    ・CAwk'
 }
 
 page11()
 {
+yellow; bold
+echo ' * AWK 関連 その他'
+reset
+yellow
+echo '------------------------------------------'
+reset
 echo ''
+echo '    ・AVD (Awk Visual Debugger) の公開'
 echo ''
+echo '    ・POSIX AWK の翻訳'
+echo '	    Rationaleとかやっぱ興味深いよね'
 echo ''
-echo '      最後にシェル芸をひとつ'
+echo '    ・GNU AWK マニュアルの翻訳'
 echo ''
-echo ''
-echo ''
+echo '    ・AWK 入門 勉強会'
+echo '    	    (jusでやる？)'
+echo '	    (シェル入門からか？)'
 }
 
 page12()
 {
+yellow; bold
+echo ' * その他'
+reset
+yellow
+echo '------------------------------------------'
+reset
+echo ''
+echo '    FreeBSD はじめました'
+echo '	現在は、jfbtermと悪戦苦闘中。'
 echo ''
 echo ''
-echo ''
-echo '	  FizzBuzz'
-echo ''
+echo '    今後は、Vine Linux と FreeBSD'
+echo '    の2本立てで行こうかなと'
 echo ''
 echo ''
 }
 
 page13()
+{
+echo ''
+echo ''
+echo ''
+echo ''
+echo ''
+echo ''
+echo '	  最後にシェル芸をひとつ'
+echo ''
+echo ''
+echo ''
+}
+
+page14()
+{
+echo ''
+echo ''
+echo ''
+echo ''
+echo ''
+echo ''
+echo '	       FizzBuzz'
+echo ''
+echo ''
+echo ''
+}
+
+page15()
 {
 echo ''
 echo ''
@@ -211,7 +271,7 @@ echo ''
 echo ''
 }
 
-page14()
+page16()
 {
 echo ''
 echo ''
@@ -224,21 +284,21 @@ echo ''
 echo ''
 }
 
-page15()
+page17()
 {
 echo ''
 echo ''
-echo '   御清聴、ありがとうございました。'
+echo '       御清聴、ありがとうございました。'
 echo ''
 echo ''
-echo '         github.com/takubo'
+echo '             github.com/takubo'
 echo ''
-echo '           @takubo_morio'
+echo '               @takubo_morio'
 echo ''
 echo ''
 }
 
-page_num=15
+page_num=17
 
 
 no_color() { echo -n '\033[m'; }

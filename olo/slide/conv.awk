@@ -28,7 +28,7 @@ BEGIN {
 !/^%/ {
 	req_reset = -1
 
-	if (/^\*/) {
+	if (/^\s*\*/) {
 		print "yellow; bold"
 	} else if (/^---/) {
 		print "yellow"
